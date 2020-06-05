@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="suo" unicode="&#59739;" d="M896-128H128V448h64V550.4C192 742.4 332.8 896 512 896s320-153.6 320-345.6V448h64v-576zM710.4 544c0 115.2-89.6 211.2-198.4 211.2S313.6 665.6 313.6 544V448h396.8V544z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="yonghu" unicode="&#59119;" d="M1004.8-128H19.2c0 230.4 160 422.4 371.2 480-108.8 38.4-185.6 140.8-185.6 262.4C204.8 768 332.8 896 492.8 896s281.6-128 281.6-281.6c0-115.2-70.4-211.2-166.4-256 224-44.8 396.8-249.6 396.8-486.4z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
