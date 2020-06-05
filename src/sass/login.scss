@@ -4,122 +4,247 @@
     list-style: none;
 }
 
-body,
-html {
-    width: 100%;
+// -----------------------------顶部-------------------------
+.top {
+    width: 930px;
+    height: 73px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .logo {
+        background: url(https://login.1688.com/img/logo.png)50px 3px no-repeat;
+        margin: 4px 12px 0 0;
+        padding: 4px;
+        width: 153px;
+        height: 37px;
+        border-radius: 2px;
+        text-decoration: none;
+        text-indent: -9999px;
+    }
+    .sub-logo {
+        padding-left: 12px;
+        height: 49px;
+        line-height: 49px;
+        background-position: -160px top;
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+        font-size: 22px;
+        font-weight: 700;
+        color: #666;
+        border-left: 1px solid #ccc;
+    }
 }
 
-// ------------顶部--------------
-#header {
-    height: 122px;
-    font-size: 12px;
-    line-height: 29px;
-    color: #555;
-    .top {
-        display: flex;
-        margin: 0 auto;
-        width: 1190px;
-        align-items: center;
-        justify-content: space-between;
+// ----------------------主要内容----------------------------
+.main {
+    width: 952px;
+    height: 436px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .feature {
+        width: 578;
+        height: 348px;
+    }
+    .formarea {
+        float: left;
+        width: 312px;
+        margin-left: 60px;
+        background: #FFFFFF;
+        .tip {
+            font-size: 12px;
+            width: 360px;
+            height: 32px;
+            line-height: 32px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #e7d3ac;
+            margin-bottom: 2px;
+            color: #f27800;
+            text-indent: 40px;
+            background-color: #fffbdd;
+            background-image: url(https://cbu01.alicdn.com/cms/upload/2013/012/178/1871210_1844408615.png);
+            background-position: 12px 8px;
+            background-repeat: no-repeat;
+        }
+        .container {
+            border: 1px solid #ccc;
+            width: 322px;
+            min-height: auto;
+            padding: 0px 25px 0px 0;
+            color: #6c6c6c;
+            background: #fff;
+            margin: 0 auto;
+            margin-top: 18px;
+            .login {
+                padding: 25px 25px 23px;
+                color: #6c6c6c;
+                background: #fff;
+                margin: 0 auto;
+                .login-block {
+                    height: 18px;
+                    line-height: 5px;
+                    font-size: 16px;
+                    color: #3c3c3c;
+                    margin: 9px 10px 0 0;
+                    font-weight: 700;
+                    display: flex;
+                    margin: 4px 0 20px;
+                    .left {
+                        border-bottom: 2px solid #555;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .fm-field {
+                margin-bottom: 20px;
+                font-size: 14px;
+                display: flex;
+                .fm-icon {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #fff;
+                    background-color: #ccc;
+                    border: 2px solid #ccc;
+                }
+                input {
+                    border: 1px solid #ccc;
+                    height: 42px;
+                    outline: none;
+                    font-size: 14px;
+                    padding: 0 50px 0 6px;
+                }
+            }
+            .btn {
+                button {
+                    -webkit-appearance: button;
+                    text-rendering: auto;
+                    color: buttontext;
+                    letter-spacing: normal;
+                    word-spacing: normal;
+                    text-transform: none;
+                    text-indent: 0px;
+                    text-shadow: none;
+                    display: inline-block;
+                    text-align: center;
+                    align-items: flex-start;
+                    background: #f40;
+                    border-color: #f40;
+                    font-size: 16px;
+                    border: 1px solid #ff9000;
+                    border-radius: 3px;
+                    font-size: 20px;
+                    height: 42px;
+                    line-height: 42px;
+                    outline: none;
+                    color: #fff;
+                    width: 100%;
+                    cursor: pointer;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+            .bottom {
+                width: 304px;
+                height: 18px;
+                text-align: right;
+                font-size: 12px;
+                margin-top: 25px;
+                a {
+                    color: #555;
+                    text-decoration: none;
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+}
+
+// ------------------推荐信息---------------------
+.bottom-tips {
+    width: 952px;
+    margin: 0 auto;
+    .shilishangjia {
+        background: url(https://cbu01.alicdn.com/cms/upload/member/power1616.png) no-repeat scroll 0 1px;
+        height: 20px;
+        width: 300px;
+        padding-left: 21px;
+        margin-left: 8px;
+        font-size: 12px;
         a {
             text-decoration: none;
             color: #555;
         }
-        .left {
-            display: flex;
-            float: left;
-            .mobile {
-                display: flex;
-                align-items: center;
-                padding: 0 10px 0 16px;
-                .photo {
-                    background: url(../img/alibar.png) no-repeat left center;
-                    background-position: 0 -112px;
-                    width: 13px;
-                    height: 29px;
-                }
-            }
-            .nav-title {
-                .ins {
-                    border-left: 1px solid #ccc;
-                    padding: 0 5px 0 11px;
-                }
-            }
-            .login {
-                padding: 0 8px 0 16px;
-                display: flex;
-                align-items: center;
-                .packet {
-                    background: url(https://img.alicdn.com/tfs/TB1EV4XrAvoK1RjSZPfXXXPKFXa-12-16.png)no-repeat left center;
-                    width: 13px;
-                    height: 29px;
-                }
-            }
-            .register {
-                padding: 0 8px 0 0;
-            }
-        }
-        .right {
-            display: flex;
-            float: right;
-            a {
-                border-right: 1px solid #ccc;
-                padding: 0 8px 0 7px;
-            }
-            .cargo {
-                .orange {
-                    background: url(../img/alibar.png) no-repeat;
-                    height: 15px;
-                    padding: 0 4px;
-                    color: white;
-                }
-                ;
-            }
-        }
-    }
-    .bottom {
-        width: 960px;
-        height: 92px;
-        margin: 0 auto;
-        padding: 12px 4px;
-        .nav-logo {
-            width: 219px;
-            height: 58px;
-            margin-top: 10px;
-            display: block;
-            color: #222;
-            .left {
-                float: left;
-                margin-top: 10px;
-                border-right: 1px solid #ccc;
-                padding: 0 10px 0 0px;
-            }
-            .right {
-                float: right;
-                font-size: 22px;
-                font-weight: 500;
-                margin-top: 14px;
-            }
-        }
     }
 }
 
-// -------------------注册--------------------
-.member-steps {
-    ul {
+.foot-tips {
+    width: 952px;
+    height: 20px;
+    margin: 0 auto;
+    .mobile {
+        height: 20px;
+        width: 300px;
+        float: left;
+        padding-left: 18px;
+        margin-left: 10px;
+        font-size: 12px;
+        background: url(../img/alibar.png) no-repeat scroll 0 0 transparent;
+        background-position: 0 -118px;
+        a {
+            text-decoration: none;
+            color: #555;
+        }
+    }
+    .right {
+        background: url(https://login.1688.com/img/suggest.png) no-repeat scroll 0 0;
+        padding-left: 21px;
+        float: right;
+        text-decoration: none;
+        font-size: 12px;
+    }
+}
+
+// ---------------------底部---------------------
+.footer {
+    width: 952px;
+    height: 93px;
+    padding: 0 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    .up {
+        padding: 8px 0;
+        border-top: 2px solid orangered;
         display: flex;
         justify-content: center;
-        li {
-            width: 170px;
-            height: 46px;
-            padding: 0 0 0 70px;
+        #copy-right {
+            color: #999;
+            font-size: 12px;
         }
-        .active-step {}
+        ul {
+            display: flex;
+            a {
+                text-decoration: none;
+                color: #222;
+                padding: 0 3px;
+            }
+        }
     }
-}
-
-.member-sumary {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 30px;
+    .down {
+        padding: 8px 0;
+        display: flex;
+        justify-content: center;
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            a {
+                text-decoration: none;
+                color: #222;
+                padding: 0 3px;
+            }
+        }
+    }
 }
