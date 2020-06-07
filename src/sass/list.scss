@@ -185,44 +185,36 @@
     background: #eee;
     align-items: center;
     border: 1px solid #999;
-    .left {
-        width: 33.3%;
+    button {
+        width: 50%;
         height: 100%;
         background: orangered;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .left {
         .text {
             color: white;
         }
     }
-    .cent {
-        width: 33.3%;
-        height: 100%;
-        background: orangered;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .right {
-        width: 33.3%;
-        height: 100%;
-        background: orangered;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    a {
-        color: #222222;
-        text-decoration: none;
-    }
 }
 
 // -----------------------------清单------------------------
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
 .list {
-    width: 1160px;
+    width: 1190px;
     margin: 0 auto;
-    font-size: 14px
+    font-size: 14px;
+    a {
+        text-decoration: none;
+        color: #666;
+    }
 }
 
 .list li {
@@ -250,6 +242,24 @@
 
 .list li span {
     display: block
+}
+
+.pagelist {
+    width: 1190px;
+    clear: both;
+    width: 1170px;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 20px;
+    height: 50px;
+    .page {
+        float: right;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+    }
 }
 
 // --------------------------底部-----------------------------------

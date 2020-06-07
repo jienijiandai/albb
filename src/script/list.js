@@ -9,7 +9,7 @@
     //1.渲染列表页的数据-默认渲染第一页
     const $list = $('.list');
     $.ajax({
-        url: 'http://10.31.162.68/hdf_jxwproject/php/listdata.php',
+        url: 'http://10.31.162.45/1688/php/listdata.php',
         dataType: 'json'
     }).done(function(data) {
         console.log(data)
@@ -59,7 +59,7 @@
         callback: function(api) {
             console.log(api.getCurrent()); //获取的页码给后端
             $.ajax({
-                url: 'http://10.31.162.68/hdf_jxwproject/php/listdata.php',
+                url: 'http://10.31.162.45/1688/php/listdata.php',
                 data: {
                     page: api.getCurrent()
                 },
