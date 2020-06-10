@@ -57,7 +57,6 @@
         homePage: '首页',
         endPage: '尾页',
         callback: function(api) {
-            console.log(api.getCurrent()); //获取的页码给后端
             $.ajax({
                 url: 'http://10.31.162.45/1688/php/listdata.php',
                 data: {

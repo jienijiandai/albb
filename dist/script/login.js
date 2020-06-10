@@ -1,0 +1,1 @@
+"use strict";!function(a){a(".btn").on("click",function(){a.ajax({type:"post",url:"http://10.31.162.45/1688/dist/login.html",data:{user:a(".username").val(),pass:a(".password").val()}}).done(function(t){t?(location.href="index.html",localStorage.setItem("username",a(".username").val())):(a(".password").val(""),alert("用户名或者密码错误"))})})}(jQuery);

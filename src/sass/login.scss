@@ -4,6 +4,15 @@
     list-style: none;
 }
 
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: orange;
+}
+
 // -----------------------------顶部-------------------------
 .top {
     width: 930px;
@@ -117,15 +126,11 @@
                 }
             }
             .btn {
-                button {
-                    -webkit-appearance: button;
+                .btn1 {
                     text-rendering: auto;
-                    color: buttontext;
                     letter-spacing: normal;
                     word-spacing: normal;
                     text-transform: none;
-                    text-indent: 0px;
-                    text-shadow: none;
                     display: inline-block;
                     text-align: center;
                     align-items: flex-start;

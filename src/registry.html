@@ -7,7 +7,6 @@
     <title>16888.com,阿里巴巴打造的全球最大的采购批发平台</title>
     <link rel="shortcut icon" href="https://cbu01.alicdn.com/favicon.ico">
     <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="fonts/font_1465353706_4784257.woff">
     <meta name="description" content="阿里巴巴（www.1688.com）是全球企业间（B2B）电子商务的著名品牌，是全球国际贸易领域内最大、最活跃的网上交易市场和商人社区，全球首家拥有超过800万网商的电子商务网站，遍布220个国家和地区，成为全球商人销售产品、拓展市场及网络推广的首选网站。" />
     <meta name="keywords" content="b2b，网上贸易，网上交易，交易市场，在线交易，买卖信息，贸易机会，商业信息，供求信息，采购，求购信息，供应信息，加工合作，代理，商机，行业资讯，商务服务，商务网，商人社区，网商" />
 </head>
@@ -26,15 +25,15 @@
                 </div>
                 <div class="login">
                     <div class="packet"></div>
-                    <a rel="nofollow" href="javascript:;" title="请登录">请登录</a>
+                    <a rel="nofollow" href="login.html" title="请登录">请登录</a>
                 </div>
                 <div class="register">
-                    <a rel="nofollow" href="//member.1688.com/member/join/enterprise_join.htm" title="免费注册">免费注册</a>
+                    <a rel="nofollow" href="registry.html" title="免费注册">免费注册</a>
                 </div>
             </ul>
             <ul class="right">
                 <div class="page">
-                    <a href="javascript:;">1688首页</a>
+                    <a href="index.html">1688首页</a>
                 </div>
                 <div class="my">
                     <a href="javascript:;">我的阿里
@@ -123,48 +122,42 @@
     </div>
     <p class="member-sumary">有企业营业执照（含个体工商户）的用户请注册。权益如下：做企业实名认证；作为卖家身份开店；作为买家身份采购。</p>
     <!-- ----------------------form表单验证---------------------- -->
-    <div class="container">
+    <form class="container" action="http://10.31.162.45/1688/php/registry.php" method="post">
         <div class="bigbox">
-            <div class="left">会员名:</div>
-            <input class="right" type="text" placeholder="设置会员名">
+            <label class="left">会员名:</label>
+            <input class="right username" type="text" placeholder="设置会员名" name="username"><span class="gougou"></span>
         </div>
         <div class="bigbox">
-            <div class="left">登录密码:</div>
-            <input class="right" type="text" placeholder="设置你的登录密码">
+            <label class="left">登录密码:</label>
+            <input class="right" type="password" placeholder="设置你的登录密码" name="password">
         </div>
         <div class="bigbox">
-            <div class="left">密码确认:</div>
-            <input class="right" type="text" placeholder="再次输入你的登录密码">
+            <label class="left">密码确认:</label>
+            <input class="right" type="password" placeholder="再次输入你的登录密码" name="password">
         </div>
         <div class="bigbox">
-            <div class="left">联系人姓名:</div>
-            <input class="right" type="text" placeholder="请输入真实姓名">
+            <label class="left">邮箱:</label>
+            <input class="right email" type="text" placeholder="请输入邮箱" name="email">
         </div>
+
         <div class="bigbox">
-            <div class="left">企业名称:</div>
-            <input class="right" type="text" placeholder="请输入营业执照上的公司名字">
-        </div>
-        <div class="bigbox">
-            <div class="left">贸易身份:</div>
+            <label class="left">贸易身份:</label>
             <div class="radio">
-                <input type="radio" checked>我要销售
-                <input type="radio">我要采购
-                <input type="radio">两者都是
+                <input type="radio" checked name="1">我要销售
+                <input type="radio" name="1">我要采购
+                <input type="radio" name="1">两者都是
             </div>
         </div>
+
         <div class="bigbox">
-            <div class="left">手机号码:</div>
-            <input class="right" type="text" placeholder="设置会员名">
-        </div>
-        <div class="bigbox">
-            <div class="left"></div>
+            <label class="left"></label>
             <input class="checkbox" type="checkbox">创建网站账号的同时，我同意遵守：</br><a href="javascript:;">《阿里巴巴服务条款》</a> 及 <a href="javascript:;">《隐私声明》</a>
         </div>
         <div class="bigbox">
-            <div class="left"></div>
-            <span class="right"><button class="ty">同意并注册</span>
+            <label class="left"></label>
+            <span class="right"><input value="同意并注册" type="submit" name="submit" class="submit"></span>
         </div>
-    </div>
+    </form>
     <!-- --------------------右侧悬浮框----------------- -->
     <div class="right-box">
         <h3>了解更多</h3>
@@ -275,6 +268,8 @@
             </ul>
         </div>
     </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script/registry.js"></script>
 </body>
 
 </html>
