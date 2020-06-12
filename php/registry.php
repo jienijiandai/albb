@@ -16,8 +16,8 @@ if (isset($_POST['username'])) {
 //接收前端表单提交的数据
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
-    $password = sha1($_POST['password']);
-    $repass = sha1($_POST['repass']);
+    $password = $_POST['password'];
+    $repass = $_POST['repass'];
     $email = $_POST['email'];
     $conn->query("insert registry1903 values(null,'$username','$password','$repass','$email',NOW())");
     header('location:http://10.31.162.45/1688/dist/login.html');
