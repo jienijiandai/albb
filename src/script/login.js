@@ -1,8 +1,8 @@
 ! function($) {
-    $('.btn').on('click', function() {
+    $('.btn1').on('click', function() {
         $.ajax({
             type: 'post',
-            url: 'http://10.31.162.45/1688/dist/login.html',
+            url: 'http://10.31.162.45/1688/php/login.php',
             data: {
                 user: $('.username').val(),
                 pass: $('.password').val()

@@ -8,21 +8,21 @@
             dataType: 'json'
         }).done(function(data) {
             $.each(data, function(index, value) {
-                if (sid == value.sid) {
+                if (sid == value.goods_id) {
+                    console.log(value);
                     let $clonebox = $('.goods-item:hidden').clone(true, true); //克隆隐藏元素
-                    $clonebox.find('.goods-pic').find('img').attr('src', value.url);
-                    $clonebox.find('.goods-pic').find('img').attr('sid', value.sid);
-                    $clonebox.find('.goods-d-info').find('a').html(value.title);
-                    $clonebox.find('.b-price').find('strong').html(value.price);
+                    $clonebox.find('.goods-pic').find('img').attr('src', value.goods_small_logo);
+                    $clonebox.find('.goods-pic').find('img').attr('sid', value.goods_id);
+                    $clonebox.find('.goods-d-info').find('a').html(value.goods_name);
+                    $clonebox.find('.b-price').find('strong').html(value.goods_price);
                     $clonebox.find('.quantity-form').find('input').val(num);
                     //计算单个商品的价格
-                    $clonebox.find('.b-sum').find('strong').html((value.price * num).toFixed(2));
+                    $clonebox.find('.b-sum').find('strong').html((value.goods_price * num).toFixed(2));
                     $clonebox.css('display', 'block');
                     $('.item-list').append($clonebox);
                     calcprice(); //计算总价
                 }
             });
-
         });
     }
 
@@ -127,7 +127,7 @@
         cookietoarray();
         let $sid = obj.parents('.goods-item').find('img').attr('sid');
         arrnum[$.inArray($sid, arrsid)] = obj.parents('.goods-item').find('.quantity-form input').val();
-        jscookie.add('cookienum', arrnum, 10);
+        $.cookie.add('cookienum', arrnum, 10);
     }
 
 
